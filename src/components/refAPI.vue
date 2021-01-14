@@ -1,14 +1,12 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <p>{{count}}</p>
-  <p>{{double}}</p>
+  {{count}}{{double}}
   <button @click="add">+1</button>
 </template>
 
 <script lang="ts">
 import { ref ,computed} from 'vue'
 export default({
-  name: 'App',
+  name: 'refAPI',
   setup(){
     const count = ref(1)
     const double = computed (()=>{
@@ -29,12 +27,5 @@ export default({
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
